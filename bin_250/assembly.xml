@@ -22,6 +22,10 @@
 	  <outputDirectory>/bin/win32</outputDirectory>
     </file>
     <file>
+        <source>linux86/protoc</source>
+        <outputDirectory>/bin/linux86</outputDirectory>
+    </file>
+    <file>
       <source>linux/protoc</source>
 	  <outputDirectory>/bin/linux</outputDirectory>
     </file>

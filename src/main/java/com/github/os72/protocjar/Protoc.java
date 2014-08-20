@@ -68,9 +68,13 @@ public class Protoc
 			resourcePath = "/bin/win32/protoc.exe";
 			filePath = sProtocFilePath + "/win32/protoc.exe";
 		}
+        else if (osName.startsWith("linux") && System.getProperty("os.arch").contains("64")){
+            resourcePath = "/bin/linux/protoc";
+            filePath = sProtocFilePath + "/linux/protoc";
+        }
 		else if (osName.startsWith("linux")) {
-			resourcePath = "/bin/linux/protoc";
-			filePath = sProtocFilePath + "/linux/protoc";
+			resourcePath = "/bin/linux86/protoc";
+			filePath = sProtocFilePath + "/linux86/protoc";
 		}
 		else if (osName.startsWith("mac")) {
 			resourcePath = "/bin/mac/protoc";
